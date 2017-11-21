@@ -6,6 +6,7 @@ body {
 header {
   position: fixed;
   width: 100%;
+  background-color: cyan;
 }
 
 header>h1 {
@@ -18,6 +19,7 @@ header>h1 {
   background-color: orange;
   padding-left: 0;
   text-align: center;
+  margin: 0 0;
 }
 
 #navigation>li {
@@ -25,6 +27,10 @@ header>h1 {
   font-size: 2em;
   width: 24.5%;
   padding: 1em 0;
+}
+
+#header-spacer {
+  height: 16em;
 }
 
 #content {
