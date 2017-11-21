@@ -1,0 +1,38 @@
+body {
+  background-color: gainsboro;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: cyan;
+}
+
+header>h1 {
+  font-size: 3.5em;
+  margin: .5em .2em;
+}
+
+#navigation {
+  list-style-type: none;
+  background-color: orange;
+  padding-left: 0;
+  text-align: center;
+  margin: 0 0;
+}
+
+#navigation>li {
+  display: inline-block;
+  font-size: 2em;
+  width: 24.5%;
+  padding: 1em 0;
+}
+
+#header-spacer {
+  height: 16em;
+}
+
+#content {
+
+}
