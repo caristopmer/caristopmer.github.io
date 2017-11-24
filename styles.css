@@ -30,9 +30,18 @@ header>h1 {
 }
 
 #header-spacer {
-  height: 16em;
+  height: 240px;
 }
 
 #content {
   margin: 2%;
+  font-size: 14px;
+}
+
+.home {
+  height: 85vh;
+}
+
+.contact {
+  height: 85vh;
 }
