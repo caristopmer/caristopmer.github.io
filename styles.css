@@ -57,8 +57,12 @@ header>h1 {
   padding: 1em;
 }
 
-.home, .projects, .background, .contact {
+.home, .projects, .background {
   min-height: 85vh;
+}
+
+.contact {
+  min-height: 80vh;
 }
 
 #contact-form {
@@ -67,6 +71,11 @@ header>h1 {
   font-size: 2em;
   text-align: center;
   padding: 5%;
+  border: 1px solid #050C42;
+}
+
+input {
+  width: 47%;
 }
 
 input, textarea {
@@ -81,10 +90,10 @@ input, textarea {
 }
 
 .contact-button {
-  border: 1px solid black;
   height: 75px;
   background-color: #050C42;
   color: white;
+  width: auto;
 }
 
 /*body {
