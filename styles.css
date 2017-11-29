@@ -1,17 +1,8 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-#scroll-wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-}
 
 body {
   margin: 0;
   background-color: #A9E8DC;
+  min-width: 100vw;
 }
 
 header {
@@ -68,6 +59,32 @@ header>h1 {
 
 .home, .projects, .background, .contact {
   min-height: 85vh;
+}
+
+#contact-form {
+  width: 80%;
+  margin: 5% auto;
+  font-size: 2em;
+  text-align: center;
+  padding: 5%;
+}
+
+input, textarea {
+  font-size: .8em;
+}
+
+#send {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  height: 100px;
+  width: 25%;
+}
+
+.contact-button {
+  border: 1px solid black;
+  height: 75px;
+  background-color: #050C42;
+  color: white;
 }
 
 /*body {
