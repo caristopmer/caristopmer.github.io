@@ -1,12 +1,17 @@
-body {
-  margin: 0;
-  background-image: url("images/code-background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#scroll-wrapper {
   width: 100%;
   height: 100%;
+  overflow: scroll;
+}
+
+body {
+  margin: 0;
+  background-color: #A9E8DC;
 }
 
 header {
@@ -21,11 +26,12 @@ header>h1 {
   font-size: 4.5em;
   margin: .5em .2em;
   letter-spacing: 3px;
+  font-weight: lighter;
 }
 
 #navigation {
   list-style-type: none;
-  background-color: #6E6E6E;
+  background-color: #02BEC4;
   padding-left: 0;
   text-align: center;
   margin: 0 0;
@@ -40,11 +46,11 @@ header>h1 {
 }
 
 #navigation>li:active {
-  background-color: #000000;
+  background-color: #050C42;
 }
 
 .active {
-  background-color: #BFBFBF;
+  background-color: #0284A8;
 }
 
 #header-spacer {
@@ -61,6 +67,20 @@ header>h1 {
 .home, .contact {
   min-height: 85vh;
 }
+
+/*body {
+  background-image: url("images/code-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+
+
+
+
+
 
 
 .blinking-cursor {
