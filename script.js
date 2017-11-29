@@ -71,4 +71,33 @@ $(document).ready(function() {
     }
   });
 
+  $("#contact-form").on("submit", function() {
+    event.preventDefault();
+    var formData = $(this).serialize();
+    console.log("in form submission");
+    console.log(formData);
+
+    $.ajax({
+      url: 'https://formspree.io/chris.mcmenomy@gmail.com',
+      method: "POST",
+      data: formData,
+      dataType: 'json'
+    })
+      .done(function(data, textStatus, jqXHR) {
+        console.log('done');
+        alert("Thanks!");
+      })
+      .fail(function(jqXHR, textStatus, errorThrown) {
+        if (jqXHR.responseJSON) {
+          console.log('failed with json data');
+        }
+        else {
+          console.log('failed with unknown data'); 
+        }
+      })
+      .always(function(dataOrjqXHR, textStatus, jqXHRorErrorThrown) {
+        console.log('always');
+      });
+  });
+
 });
