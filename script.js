@@ -1,6 +1,6 @@
 $(document).ready(function() {
-
   let navHeight = 240;
+  $("#home").addClass("active");
 
   $('#home').on('click', function() {
     $('html, body').animate({
@@ -24,6 +24,51 @@ $(document).ready(function() {
     $('html, body').animate({
         scrollTop: $(".contact").offset().top - navHeight
     }, 1000);
+  });
+
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop() + navHeight + 1;
+    
+    var homeTop = $(".home").offset().top;
+    var projectsTop = $(".projects").offset().top;
+    var backgroundTop = $(".background").offset().top;
+    var contactTop = $(".contact").offset().top;
+
+    if (scrollPos < projectsTop) {
+      $("#home").addClass("active");
+      $("#projects").removeClass("active");
+      $("#background").removeClass("active");
+      $("#contact").removeClass("active")
+    } else {
+      $("#home").removeClass("active");
+    }
+
+    if (scrollPos >= projectsTop && scrollPos < backgroundTop) {
+      $("#home").removeClass("active");
+      $("#projects").addClass("active");
+      $("#background").removeClass("active");
+      $("#contact").removeClass("active")
+    } else {
+      $("#projects").removeClass("active");
+    }
+
+    if (scrollPos >= backgroundTop && scrollPos < contactTop) {
+      $("#home").removeClass("active");
+      $("#projects").removeClass("active");
+      $("#background").addClass("active");
+      $("#contact").removeClass("active")
+    } else {
+      $("#background").removeClass("active");
+    }
+
+    if (scrollPos + 10 >= contactTop) {
+      $("#home").removeClass("active");
+      $("#projects").removeClass("active");
+      $("#background").removeClass("active");
+      $("#contact").addClass("active")
+    } else {
+      $("#contact").removeClass("active");
+    }
   });
 
 });

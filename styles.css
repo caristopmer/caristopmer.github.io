@@ -25,8 +25,16 @@ header>h1 {
 #navigation>li {
   display: inline-block;
   font-size: 2em;
-  width: 24.5%;
+  width: 24.6%;
   padding: 1em 0;
+}
+
+#navigation>li:active {
+  background-color: red;
+}
+
+.active {
+  background-color: yellow;
 }
 
 #header-spacer {
@@ -35,13 +43,9 @@ header>h1 {
 
 #content {
   margin: 2%;
-  font-size: 14px;
+  font-size: 2vw;
 }
 
-.home {
-  height: 85vh;
-}
-
-.contact {
-  height: 85vh;
+.home, .contact {
+  min-height: 85vh;
 }
