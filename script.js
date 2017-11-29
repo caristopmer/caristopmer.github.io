@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  let navHeight = 240;
+  let navHeight = 270;
   $("#home").addClass("active");
 
   $('#home').on('click', function() {
