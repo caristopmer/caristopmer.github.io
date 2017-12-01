@@ -96,6 +96,10 @@ input, textarea {
   width: auto;
 }
 
+.contact-success {
+  color: red;
+}
+
 /*body {
   background-image: url("images/code-background.jpg");
   background-attachment: fixed;
