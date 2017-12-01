@@ -85,7 +85,7 @@ $(document).ready(function() {
     })
       .done(function(data, textStatus, jqXHR) {
         console.log('done');
-        $("#contact-form").reset();
+        $(this).clear();
         $("#contact-form textarea").after("<br><span class='contact-success'>Message sent! Thanks!<span>");
       })
       .fail(function(jqXHR, textStatus, errorThrown) {
